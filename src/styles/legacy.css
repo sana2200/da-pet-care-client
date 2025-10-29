@@ -1,0 +1,33 @@
+/* Legacy styles ported from original site for fidelity where helpful */
+.header{ position:sticky; top:0; z-index:50; background:#fff; box-shadow:0 2px 12px rgba(0,0,0,.06); }
+.nav{ height:64px; display:flex; align-items:center; justify-content:space-between; }
+.brand{ display:flex; align-items:center; gap:.6rem; font-weight:700; }
+.logo, span.one{ color:#439f99; font-weight:700; font-size:30px; }
+.nav ul{ display:flex; gap:1.2rem; list-style:none }
+.nav a.link{ padding:.5rem .8rem; border-radius:10px; color:#0f172a; font-weight:500 }
+.nav a.link:hover{ background:#f1f5f9 }
+.nav a.active{ background: var(--brand); color:#fff }
+.nav a.cta{ border:1px solid #e5e7eb }
+.nav a.cta:hover{ border-color:#cbd5e1 }
+
+#menu-toggle{ display:none }
+.menu-btn{ display:none; cursor:pointer; padding:.4rem .55rem; border:1px solid #e5e7eb; border-radius:10px }
+.menu-btn span{ display:block; width:22px; height:2px; background:#111; margin:5px 0 }
+@media (max-width: 900px){
+  .menu-btn{display:block}
+  .nav ul{ position:absolute; left:0; right:0; top:64px; background:#fff; flex-direction:column; gap:0; border-top:1px solid #eef2f7; transform:translateY(-8px); opacity:0; pointer-events:none; transition:.25s ease; box-shadow:0 10px 24px rgba(0,0,0,.06); }
+  .nav ul li a{ display:block; padding:14px 16px }
+  /* Make the checkbox toggle its sibling UL menu in mobile */
+  #menu-toggle:checked ~ ul{ transform:translateY(0); opacity:1; pointer-events:auto }
+}
+
+.hero{ position:relative; overflow:hidden; background:linear-gradient(180deg,#eafffd, #ffffff) }
+.hero-wrap{ display:grid; grid-template-columns: 1.2fr .8fr; align-items:center; gap:28px; padding:48px 0 }
+.hero h1{ font-size:clamp(2rem,4.2vw,3.2rem); line-height:1.15; margin-bottom:12px }
+.hero p{ color:var(--muted); margin-bottom:22px }
+.badge{ display:inline-flex; align-items:center; gap:.5rem; background:#ecfeff; color:#0e7490; padding:.35rem .7rem; border-radius:999px; font-size:.9rem; margin-bottom:10px; border:1px solid #cffafe }
+.actions{ display:flex; gap:.8rem; flex-wrap:wrap }
+.hero-figure{ border-radius:24px; overflow:hidden; box-shadow:var(--shadow); aspect-ratio: 4 / 3; background:#d1fae5 }
+
+.product .image{ position:relative }
+.price-tag{ position:absolute; top:10px; left:10px; background:var(--accent); color:#000; font-weight:700; padding:.35rem .55rem; border-radius:999px }
