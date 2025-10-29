@@ -1,4 +1,4 @@
-import drAnawar from '../images/DrAnawarHossain.jpg'
+import drAnawar from '../Images/DrAnawarHossain.jpg'
 
 export default function About(){
   return (

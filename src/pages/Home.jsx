@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom'
-import cat from '../images/cat.jpg'
+import cat from '../Images/cat.jpg'
 
 export default function Home(){
   return (
