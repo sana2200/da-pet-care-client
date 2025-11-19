@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Redirecting…</title>
+    <meta name="robots" content="noindex" />
+  </head>
+  <body>
+    <p>Redirecting…</p>
+    <script>
+      // GitHub Pages SPA redirect helper
+      (function(l){
+        var base = '/da-pet-care-client';
+        var path = l.pathname;
+        // Strip base from path if present
+        if (path.indexOf(base) === 0) {
+          path = path.slice(base.length);
+        }
+        if (!path.startsWith('/')) path = '/' + path;
+        var target = base + '/?p=' + encodeURIComponent(path + l.search + l.hash);
+        l.replace(target);
+      })(window.location);
+    </script>
+  </body>
+</html>
