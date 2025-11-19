@@ -6,6 +6,5 @@ export default defineConfig({
   plugins: [react()],
   build: {
     target: 'esnext'
-  },
-  base: '/da-pet-care-client/'
+  }
 })
