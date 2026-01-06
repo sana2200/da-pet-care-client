@@ -1,0 +1,28 @@
+{
+  "name": "da-pet-care",
+  "version": "1.0.0",
+  "description": "Full Stack Pet Care Application",
+  "scripts": {
+    "test-connection": "node test-connection.js",
+    "install-all": "npm install && cd server && npm install && cd ../Client && npm install",
+    "dev:server": "cd server && npm run dev",
+    "dev:client": "cd Client && npm run dev",
+    "seed": "cd server && npm run seed",
+    "start:server": "cd server && npm start",
+    "build:client": "cd Client && npm run build"
+  },
+  "keywords": [
+    "pet-care",
+    "ecommerce",
+    "booking",
+    "fullstack"
+  ],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "axios": "^1.13.2"
+  },
+  "dependencies": {
+    "pdfkit": "^0.17.2"
+  }
+}
